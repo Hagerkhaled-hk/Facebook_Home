@@ -1,0 +1,233 @@
+
+.blank
+{
+    width: 290px;
+    height: 382px;
+    top: 0px;
+    background-color:white;
+    
+position:absolute;
+    z-index: 90;
+left: -22px;
+transition: 0.15s;   
+border-radius: 4px;
+box-shadow: -8.5px -8.5px 17px  #0000007a;
+      visibility: hidden;
+ 
+}
+ 
+
+
+  
+
+.scroll_bar
+{
+    overflow-y: hidden;
+height: 375px;
+margin-left:0px ;
+margin-right:0px ;
+}
+
+
+
+.scroll_bar:hover,
+.scroll_bar:active,
+.scroll_bar:focus {
+  overflow-y: scroll;
+}
+
+ 
+
+ .icon_search:focus-within  .blank
+{
+
+     visibility: visible;
+ 
+} 
+
+.search::after
+{content: "\f060";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600; /* Required for solid icons */
+    margin-right: 8px;
+    color: #5a5c63;
+    position: absolute;
+    left: 7%;
+    top:20%;
+   
+    border-radius:50% ;
+    width:35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+     transition-duration: 0.1s ; 
+     visibility:hidden;
+
+
+    
+}
+
+ .search input:focus
+{
+    width:214px ;
+    
+} 
+.icon_search:focus-within  .search
+{
+padding-left: 0px;}
+.search:hover::after,.blank li:hover
+{
+    background-color:#f0f2f5;
+  
+}
+
+  
+
+.icon_search:focus-within  .search::after
+{
+    left: 2%;
+    visibility: visible;
+    transition-timing-function: ease-in;
+
+     
+}
+.icon_search .blank {
+    padding-top:50px ;
+
+}
+
+.icon_search .blank .text{
+    display:flex;
+
+     justify-content: space-between;
+     margin-right: 0px;
+    margin-left: 0px;
+    width: 265px;
+ 
+}
+.icon_search .blank p
+{ 
+  
+    width: fit-content;
+   cursor: pointer;
+
+   font-weight: 500;
+ font-style: normal;
+}
+
+
+  
+
+.icon_search .blank .recent
+{
+    top:43px;
+    margin-left:16px;
+     font-size: 15px;
+   
+}
+
+.icon_search .blank .edit
+{ color: #0064D1; 
+    margin-right: 3px;
+     font-size: 12px;
+width:28px;
+height:28px;
+border-radius: 2px;
+display:flex ;
+justify-content: center;
+align-items: center;
+}
+
+.icon_search .blank .edit:hover
+{
+    background-color: #f0f2f5;
+
+}
+.blank  ul 
+{
+    margin-left: -39px;
+}
+
+
+
+ .blank  li
+{
+    width:260px;
+    height:45px ;
+    margin-top:-20px;
+    position: relative;
+    margin-bottom: 23px;
+
+    display:flex ;
+    justify-content:flex-start;
+    align-items: center;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.blank li p,.blank li img ,.blank_messanger ul li img,.blank_messanger ul li  .request_message ,
+.blank_notification ul li img,.blank_notification ul li  .request_message{
+    margin-left:10px ;
+
+}
+.blank li p ,.blank_messanger ul li p,.blank_notification ul li p
+{
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+
+
+.blank li img,.blank_messanger ul li img,.blank_notification ul li img
+{
+    border-radius: 50%;
+    
+}
+
+.blank li small,.blank_pic li small
+{font-size: 11px;
+    color: #5a5c63;
+  
+}
+
+.blank li small
+{
+    position: absolute;
+    top:25px;
+    left:54px;
+}
+
+.blank li small::before
+{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #0064D1;
+     display: inline-block; /* Ensure it displays correctly */
+    margin-right: 5px;
+    border-radius: 50%;
+
+}
+
+.blank li i
+{
+    position: absolute;
+    right:10px;
+    font-size: 12px;
+    opacity: 0.7;
+    width:20px ;
+    height:20px ;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.blank li i:hover , .see_link:hover
+{
+    background-color: #c8cbcf;
+
+}

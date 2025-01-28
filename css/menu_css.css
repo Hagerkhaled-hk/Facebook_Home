@@ -1,0 +1,554 @@
+/* changed
+ */
+.profilepic_others #blank {
+    position: absolute;
+    /*      height: 372px;
+ */
+    border-radius: 5px;
+    display: block;
+    box-shadow: 0px 0px 5px #0000003d;
+    z-index: 90;
+    height: 80vh;
+
+}
+
+#blank .container {
+    height: 100%;
+
+}
+
+
+.profilepic_others .blank_menu {
+    background-color: #f0f2f5;
+    padding: 26px 2px 0px 12px;
+
+    width: 469px;
+    right: 15px;
+    top: 50px;
+    overflow: hidden;
+
+                   visibility: hidden;
+  
+}
+
+
+
+
+.profilepic_others .menu:focus-within+.blank_menu,
+.blank_menu:hover {
+    visibility: visible;
+}
+
+
+.profilepic_others .menu:focus {
+    border-style: none;
+}
+
+
+
+
+.profilepic_others .blank_menu .menu {
+
+
+    font-weight: bold;
+    font-size: 22px;
+    display: block;
+    height: 37px;
+    width: 469px;
+    background-color: f0f2f5;
+    position: sticky;
+    margin: -27px 0 0px -10px;
+    padding: 5px 0 0 10px;
+
+
+
+}
+
+
+.profilepic_others .blank_menu .container {
+    background-color: #f0f2f5;
+    width: 467;
+    height: 355px;
+}
+
+/* change
+ */
+.profilepic_others .blank_menu .container {
+
+    border-radius: 5px;
+    display: flex;
+    margin: 0px;
+    align-items: normal;
+    overflow-y: scroll;
+}
+
+
+
+
+
+
+
+/* change
+ */
+
+.profilepic_others .blank_menu div {
+    border-radius: 5px;
+    margin: 0PX;
+
+
+}
+
+.profilepic_others .blank_menu .container div:not(.list_menu, .list_create) {
+    background-color: white;
+    border: 1px solid #d0d3d7;
+    overflow-y: hidden;
+}
+
+.profilepic_others .blank_menu .social {
+
+    /*      height:338px;
+ */
+    height: 100%;
+
+    width: 360px;
+    margin-right: 13px;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+
+    display: block;
+    box-shadow: 0px 0px 5px #0000003d;
+
+}
+
+.profilepic_others .blank_menu .create {
+    width: 180px;
+    height: 455px;
+    margin-right: 3px;
+    display: block;
+    /*  height: 104%;
+ */
+}
+
+.blank_menu .social p,
+.blank_menu .social div,
+.blank_menu .social form {
+    margin: 16px 0px 0px 16px;
+    width: 252.13px;
+
+}
+
+.blank_menu .social p,
+.create p {
+    font-size: 15px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+#search input {
+    width: 270.13px;
+
+    height: 27.5px;
+    border-radius: 40px;
+    background-color: #f0f2f5;
+    border-style: none;
+}
+
+#search input::placeholder {
+    padding-left: 24px;
+    font-size: 12px;
+    transition: 0s;
+}
+
+#search {
+    position: relative;
+}
+
+
+#search::before {
+
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    font-size: 12px;
+}
+
+#div1 #search::before,
+.blank_messanger #search::before {
+    transition-delay: 0s;
+}
+
+
+.profilepic_others .blank_menu .container .list_menu {
+    background-color: white;
+    display: block;
+    margin-left: 8px;
+    width: 271.13px;
+
+    height: max-content;
+
+}
+
+
+
+.blank_menu .container ul {
+    padding: 0px;
+    margin-top: 8px;
+
+}
+
+/* from blank_menu
+ */
+#blank .container ul li,
+.list_create ul li {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    border-radius: 5px;
+    background-color: white;
+    height: 54px;
+    cursor: pointer;
+
+}
+
+.blank_menu .container ul .friends,
+.blank_menu .container ul .groups {
+    height: 45px;
+}
+
+
+#blank .container ul li:hover,
+.blank_pic .fixed div:not(#button_div):hover {
+    background-color: #f0f2f5;
+
+}
+
+/* from blank_menu
+ */
+#blank .container ul li img,
+.blank_menu .container ul li svg {
+    width: 35px;
+    height: 35px;
+}
+
+.blank_menu .container ul li section,
+.list_create ul li p,
+.blank_messanger ul li section,
+.blank_notification ul li section {
+
+    height: 41px;
+    width: 212px;
+    margin: 5px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+
+.blank_menu .container ul .friends section,
+.blank_menu .container ul .groups section {
+    height: 35px;
+}
+
+
+#blank .container ul li p,
+.blank_messanger .fixed .text,
+.blank_notification .fixed .text {
+    font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+    width: 200px;
+
+}
+
+.blank_menu .container ul li section small {
+
+    font-size: 10px;
+
+}
+
+.profilepic_others .container div hr {
+    border-color: #f0f2f56e;
+}
+
+
+#blank .create .list_create li img,
+.blank_messanger .chats img,
+.blank_notification .chats img {
+    width: 15px;
+    height: 15px;
+
+}
+
+
+.container .create .list_create li section {
+    width: 80px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #aaadb2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .create .list_create li {
+    width: 119px;
+}
+
+.blank_menu .container .list_create {
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    display: block;
+}
+
+.blank_menu .container .create p:not(.list_create p),
+.blank_menu .container .create div {
+    margin: 16px 0px 0px 8px;
+}
+
+
+
+#blank .container .list_create ul li p {
+    margin: 19px 0px 0px 5px;
+}
+
+
+@media (max-width : 1022px) {
+    #blank {
+        right: -5px;
+
+    }
+}
+
+@media (max-width : 700px) {
+    /* --------------menu----------------------*/
+
+    .profilepic_others .blank_menu .container {
+        display: block;
+    }
+
+    #blank,
+    #blank .container    {
+        width: 371px;
+    }
+  
+    .profilepic_others .blank_menu .social , .profilepic_others .blank_menu .create
+    {
+        height: max-content;
+    }
+    .profilepic_others .blank_menu .create
+    {
+        width: 360px;
+        margin-bottom: 30px;
+    }
+
+
+.blank_menu .container .list_create ul li
+{
+    width: 277.5px;
+}
+
+.blank_menu .container .list_create  li section
+{
+    width: 30px;
+}
+
+.create p 
+{
+    padding-left: 20px;
+}
+
+
+
+
+}
+
+@media (max-width : 440px) {
+    #profilepic_others_id .blank_menu {
+        width: 282px;
+        overflow-x: hidden;
+    }
+
+    #profilepic_others_id .blank_menu .social,
+    #profilepic_others_id .blank_menu .create {
+        width: 274px;
+        overflow-x: hidden;
+
+    }
+    #profilepic_others_id .search_social ,
+    #profilepic_others_id .search_social input
+       {
+        width: 247.13px;
+    }
+
+     .blank_menu  hr
+{
+
+    width: 150px;
+}
+ 
+    #blank .list_menu ul li  {
+        width: fit-content;
+    }
+
+
+    
+}
+
+
+/* @media (max-width : 392px) {
+     #profilepic_others_id .blank_menu {
+/*         left: 16px;
+ */
+
+/* }
+
+}
+ */
+
+
+
+/* @media (max-width : 359px) {
+    #profilepic_others_id .blank_menu {
+        position: fixed;
+
+       left: 3px;
+   }
+
+} */
+
+
+
+
+
+
+
+
+
+@media (max-width : 345px) {
+    #profilepic_others_id .blank_menu {
+        right: 15px;
+        width: 232px
+    }
+
+
+
+
+    #profilepic_others_id .blank_menu .social,
+    #profilepic_others_id .blank_menu .create {
+        width: 220px;
+overflow-x: hidden;
+    }
+
+    .blank_menu .container .list_menu li section,
+    .blank_menu .container .list_menu li .section small
+    ,.blank_menu .social p
+    ,.blank_menu .social hr {
+        width: 150px;
+    }
+
+    .blank_menu .social hr
+    {
+        margin: 16px;
+    }
+
+    #profilepic_others_id .search_social ,
+    #profilepic_others_id .search_social input,
+    #blank .list_create ul li
+    {
+        width: 190px;
+    }
+
+    .blank_menu .container .list_menu li  section small {
+        display: block;
+    }
+
+    #blank .list_menu ul li  {
+        height: 80px;
+        width: fit-content;
+    }
+
+    .blank_menu .container .list_create  li section
+{
+    width: 40px;
+}
+   
+
+}
+
+
+
+
+
+/* @media (max-widht : 282px)
+{
+    #profilepic_others_id .blank_menu {
+        right: 15px;
+    
+    }
+}
+
+ */
+
+
+
+@media (max-width : 273px) {
+    #profilepic_others_id .blank_menu {
+        position: fixed;
+        left: 15px;
+        width: 160px
+    }
+
+
+
+
+    #profilepic_others_id .blank_menu .social,
+    #profilepic_others_id .blank_menu .create {
+        width: 146px;
+overflow-x: hidden;
+    }
+
+    .blank_menu .container .list_menu li section,
+    .blank_menu .container .list_menu li .section small
+    ,.blank_menu .social p
+    ,.blank_menu .social hr {
+        width: 63px;
+    }
+
+    .blank_menu .social hr
+    {
+        margin: 16px;
+    }
+
+    #profilepic_others_id .search_social ,
+    #profilepic_others_id .search_social input,
+    #blank .list_create ul li
+    {
+        width: 126.17px;
+    }
+
+    .blank_menu .container .list_menu li  section small {
+        display: block;
+
+    }
+
+    #blank .list_menu ul li  {
+        height: 380;
+        width: fit-content;
+    }
+
+    .blank_menu .container .list_create  li section
+{
+    width: 27.8px;
+}
+
+
+#blank .container ul li p{
+    width: 30px;
+    word-wrap: break-word;
+}
+   
+}

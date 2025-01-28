@@ -1,0 +1,353 @@
+#profilepic_others_id .blank_pic
+{
+          visibility:hidden;
+         height: 372px;
+
+     
+ }
+ #profilepic_others_id .pic:focus-within+.blank_pic,.blank_pic:hover
+{
+     visibility: visible;
+ }
+
+
+.profilepic_others .pic img  
+{
+    border-radius: 50%;
+ 
+}
+
+
+
+.profilepic_others
+{
+    position: relative;
+}
+
+.profilepic_others .pic::after
+{
+    content: url(https://img.icons8.com/material-rounded/12/chevron-down.png);
+    position: absolute;
+        border-radius: 50%;
+        background-color:#e0e0ef;
+        border: 1px solid white;
+        top: 30px;
+        right: 1px;
+}
+.blank_pic .container,.blank_pic .fixed
+{
+    display: block;
+    margin: auto;
+
+}
+.blank_pic .fixed #button_div
+{
+    margin: -0.5px auto;
+    height: fit-content;
+}
+.blank_pic .fixed
+{    padding: 5px;
+    height:105px;
+    width: 255px;
+    box-shadow: 0px 0px 5px #0000003d;
+    border-radius: 10px;
+    margin-top: 6.5px;
+}
+
+
+
+.blank_pic #pic_container ul li
+{
+    width: 270px;
+    height: 38px;
+    margin: 4px auto;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.blank_pic ul 
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.blank_pic .container
+{
+    width: fit-content;
+    height:fit-content;
+    padding: 0px;
+    margin-top: 10px;
+
+
+
+}
+
+
+.blank_pic #fixed div
+{
+display: flex;
+justify-content: start;
+border-radius: 5px;
+    padding: 1px 3px;
+    cursor: pointer;
+    width: 250px;
+    margin-left: 0px;
+
+}
+.blank_pic .fixed div p
+{margin:0px 5px;
+
+    font-weight: 500;
+font-size: 13px;
+}
+.blank_pic .fixed #bdi
+{
+    justify-content: space-between;
+    height: 29px;
+ 
+}
+
+
+.blank_pic .fixed div img 
+{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.blank_pic .fixed  #cat
+{
+    height: 32px;
+}
+
+.blank_pic .fixed  .cat img
+{
+margin-top: 2px;
+}
+.blank_pic .fixed div button 
+{
+    width: 257px;
+    height: 26px;
+
+    justify-content: center;
+    display: flex;
+    padding: 4px;
+
+}
+
+.blank_pic .fixed  button img 
+{
+    height: 15px;
+    width: 13px;
+    margin-right: 3px;
+}
+.blank_pic .fixed div .unknown_pic
+{
+    height: 20px;
+    width: 20px;
+}
+
+.blank_pic .rights
+{
+    width: fit-content;
+    height: fit-content;
+    font-size: 10px;
+    display: block;
+ }
+
+.blank_pic .rights a:hover
+{
+    text-decoration: underline;
+}
+.blank_pic #pic_container ul li p 
+{
+    font-size: 12px;
+    margin-right: 25px;
+    font-weight: 500;
+
+}
+.blank_pic #pic_container ul li small
+{
+    font-weight: 400;
+
+}
+
+.blank_pic .rights a
+{
+    margin-left: 2.5px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.blank_pic .rights p ,.blank_pic .rights a
+{
+    color :#65686C;
+
+}
+.blank_pic .rights p 
+{
+margin: -1px 2.5px;}
+.blank_pic  .fixed hr
+{
+    margin-top: 3px;
+    margin-bottom: 3px;    width: 250px;
+
+}
+#blank #pic_container  li img,#blank #pic_container  li svg
+{
+    width: 18px;
+    height: 18px;
+      
+    }
+
+    #blank #pic_container  li div
+    {
+        width: 27px;
+        height: 27px;
+        background-color:#bdbcbc;
+        border-radius: 50%;
+        margin-left: 5px;
+    }
+
+    #blank #pic_container  li small
+    {
+        display: block;
+    }
+
+#pic_container .arrow_li::after
+{
+    right:10;
+}
+
+.blank_pic .fixed #button_div button:hover
+{
+    background-color: #c8cbcfcf;
+}
+
+
+
+@media (max-width : 700px) {
+
+
+    .blank_pic #pic_container ul li
+    {
+        width: 350px;
+    }
+
+    .blank_pic #pic_container ul li p
+    {
+        margin-right: 100px;
+    }
+
+    .blank_pic .fixed
+    {
+        width: 330px;
+    }
+    .blank_pic .fixed #bdi ,    .blank_pic .fixed hr 
+
+    {
+        width: 330px;
+    }
+
+    .blank_pic .rights
+    {
+        display: flex;
+    }
+
+}
+
+
+
+@media (max-width : 427px) {
+    #profilepic_others_id .blank_pic
+    {    
+        width: 240px;
+/*           position: fixed;
+       left: 40px;
+ */   }
+ .blank_pic .fixed div button
+ {
+    width: 210px;
+ }
+ #profilepic_others_id .blank_pic,  #profilepic_others_id .blank_pic .container
+ {
+    width: 224px;
+ }
+ .blank_pic #pic_container ul li,.blank_pic .fixed
+ {
+    width: 218px;
+ }
+ .blank_pic #pic_container ul li p
+ {width: 100px;
+
+margin-right: 73px;
+}
+ .blank_pic .rights
+ {
+    font-size: 7px;
+ }
+}
+
+@media (max-width : 305px) {
+
+    #profilepic_others_id .blank_pic
+         {
+            right: 20px;
+         }
+}
+
+
+
+@media (max-width : 273px) {
+
+
+    #profilepic_others_id .blank_pic
+    {    
+        width: 140px;
+           position: fixed;
+       left: 40px;
+       overflow-y: scroll;
+       overflow-x: hidden;
+    }
+ .blank_pic .fixed div button
+ {
+    height: 50px;
+    width: 110px;
+ }
+ #profilepic_others_id .blank_pic,  #profilepic_others_id .blank_pic .container
+ {
+    width: 124px;
+ }
+ .blank_pic #pic_container ul li,.blank_pic .fixed
+ {
+    height: fit-content;
+    width: 110px;
+ }
+ .blank_pic .fixed #bdi, .blank_pic .fixed hr
+ {
+    width: 76px;
+ }
+ .blank_pic .fixed #cat 
+ {
+    height: 100px;
+    width: 105px;
+ }
+ .blank_pic #pic_container ul li
+ {
+
+    height: 100px;
+ }
+ .blank_pic #pic_container ul li p
+ {width: 50px;
+
+margin-right:37px;
+}
+ .blank_pic .rights
+ {
+    display: block;
+    height: 43px;
+        width: 75;
+ }
+}
+

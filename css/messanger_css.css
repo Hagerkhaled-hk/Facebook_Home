@@ -1,0 +1,422 @@
+.profilepic_others .blank_messanger ,.profilepic_others .blank_notification,.profilepic_others .blank_pic
+{    
+background-color: white;
+    width: 289px;
+right: 15px;
+    top: 50px;
+   }
+   .profilepic_others .blank_messanger{
+             visibility: hidden;
+   
+ overflow-y: hidden;
+   }
+.profilepic_others .messanger:focus-within+.blank_messanger,.blank_messanger:hover
+{
+    visibility: visible;
+}
+.blank_messanger .container,.blank_messanger .fixed 
+{
+   overflow: hidden;
+  
+
+}
+
+.blank_messanger .container,.blank_messanger .fixed 
+ { width: 286.13px;
+      /* width: 276.13px; */
+    margin-bottom: 2px;
+ }
+
+ .blank_messanger .container ul li   ,.blank_messanger section div,
+ .blank_notification .container ul li   ,.blank_notification section div
+
+{
+    width:271.13px;
+}
+.blank_messanger .container ul li, .blank_notification .container ul li
+
+{position: relative;
+
+
+}
+
+#blank #messanger_container  ul li
+{
+   justify-content: flex-start;
+}
+.blank_messanger section .chats, .blank_notification section .chats
+{
+font-weight: bold;
+font-size: 22px;
+
+}
+
+
+/* changed
+ */#blank .fixed  div,#blank .fixed form
+{ 
+  margin-left: 5px;  
+  margin-bottom: 2px; 
+}
+
+
+
+ .blank_messanger .fixed .text,#blank .fixed .chats ,.blank_notification .fixed .text
+ {
+    display:flex ;
+    justify-content: space-between;
+
+
+ }
+
+ #blank .fixed .chats p
+ {
+    margin: 0px;
+ }
+
+
+.blank_messanger .fixed .chats .icons
+ {
+    width: 80px;
+ }
+ .blank_messanger .fixed .text
+ {
+    width: 165px;
+ }
+ .blank_messanger .fixed .text p, .blank_notification .fixed .text p
+
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    font-weight: 500;
+    border-radius: 10px;
+    height: 27px;
+    cursor: pointer;
+
+ }
+
+
+
+
+ .blank_messanger .fixed .text .community,
+ .blank_notification .fixed .text .community
+ {
+    width: 100px;
+ }
+ .blank_messanger .fixed .text .inbox,.blank_notification .fixed .text .inbox
+ {
+    width: 50px;
+    color: #0064D1;
+    background-color: #Ebf5ff;
+ }
+
+
+
+ .blank_messanger .fixed .text p:hover, .blank_notification .fixed .text p:hover
+ {
+    background-color: #f0f2f5;
+
+ }
+
+ #blank .fixed form
+ {
+    margin-top: 5px;
+    margin-bottom: 9px;
+ }
+ .blank_messanger .container,
+ .blank_notification 
+ {
+   overflow-y: scroll;
+ }
+ .blank_messanger .container,.blank_messanger .container ul
+ {
+   height: 100%;
+/*    height: 255px;
+ */   padding: 0px;
+ }
+
+ .blank_messanger  ul li ,
+ .blank_notification  ul li 
+ {
+   margin-right :4px ;
+   margin-left :2px ;
+ }
+ .blank_messanger  ul li small,
+ .blank_notification  ul li small{
+   font-size: 10px;
+   font-weight: 500;
+ }
+
+ .blank_messanger  ul li section
+ {
+   margin-top: 8px;
+   position: relative;
+ }
+
+ .blank_messanger  ul li p,
+ .blank_notification  ul li p
+ {
+font-weight: 500;
+ }
+ .blank_messanger  ul li small:not( .diff_small,
+ .unseen_small),.blank_messanger  ul li  .unseen_small span
+ {
+   color: #6d7074;
+
+ }
+ #messanger_container  ul li:hover,.blank_messanger .fixed .icons div:hover,
+ .blank_notification .fixed .icons div:hover
+ {
+   background-color: #f0f2f5;
+
+ }
+
+
+ .blank_messanger .fixed #icons div,
+ .blank_notification .fixed #icons div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   width: 23px;
+   height: 23px;
+   margin:0;
+   margin-right: 1px;
+cursor: pointer;
+ }
+
+.blank_messanger .fixed #icons div #create-new,
+.blank_notification .fixed #icons div #create-new
+{
+  
+   margin-left:2px;
+   margin-top: -2px;
+
+}
+
+
+#messanger_container ul li .online::after,
+#messanger_container ul li section::before,
+#messanger_container ul li:not(#request_message_li)::after,
+#messanger_container ul #request_message_li::after,
+#pic_container .arrow_li::after,
+.blank_notification #messanger_container   ul li section::after 
+{
+   position: absolute;
+  
+   height: 18px;
+   width: 15x;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#messanger_container ul #request_message_li::after,
+#pic_container .arrow_li::after
+{
+   content: url(https://img.icons8.com/ios-glyphs/18/5a5c70/forward.png);
+   right: -1px;
+
+
+}
+
+#messanger_container ul li:not(#request_message_li)::after
+{
+content:url(https://img.icons8.com/ios-glyphs/13/5a5c70/ellipsis.png);
+right: 22px;
+top:15px;
+height: 27px;
+   width: 29px;
+border-radius: 50%;
+background-color: white;
+border: 1px solid #5a5c7040;
+box-shadow:0px 0px 3px #5a5c70;
+visibility: hidden;
+transition-delay:2ms ;
+}
+
+#blank #messanger_container ul li:hover::after{
+   visibility: visible;
+
+
+}
+
+#messanger_container ul li .online::after
+{   content: url(https://img.icons8.com/ios-glyphs/18/40C057/full-stop--v1.png);
+   left: -20px;
+   top:20px;
+
+}
+
+#messanger_container ul li .unseen::before
+{
+   content: url(https://img.icons8.com/ios-glyphs/18/0064D1/full-stop--v2.png);
+   right: -14px;
+   top:12px;
+}
+
+#blank #messanger_container  .request_message img
+{margin: 0px;
+width: 15px;
+height: 15px;
+
+} 
+#blank #messanger_container  .request_message 
+{    background-color:#bdbcbc;
+   border-radius:50% ;
+
+}
+
+#blank #messanger_container img 
+{
+   margin-left: 0px;
+}
+
+/*  hover&icons
+ */
+
+
+
+ @media (max-width : 700px) {
+
+
+
+   .blank_messanger .container ul,
+   #blank #messanger_container  ul li
+   {
+      width: 340px;
+    }
+
+    .blank_messanger .fixed
+    {
+      width: 370px;
+    }
+  
+    .blank_messanger section div,
+    .blank_messanger #search input
+    {
+        width: 360px;
+    }
+
+   
+    
+    #messanger_container ul li .unseen::before 
+    {
+      right: -87px;
+    }
+ }
+
+
+  
+@media (max-width : 427px) {
+   #profilepic_others_id .blank_messanger
+   {   
+/*          position: fixed;
+      left: 40px; 
+ */      /* 16 */
+right: 16px;
+      
+  }
+
+  #profilepic_others_id .blank_messanger,  #profilepic_others_id .blank_messanger
+  .container,  .blank_messanger .fixed 
+
+  {
+   width: 280px;
+  }
+
+/*   .blank_messanger .fixed 
+  {
+   width: 270px;
+  }
+ */
+  .blank_messanger section div, .blank_messanger #search input,
+  .blank_messanger .container ul, #blank #messanger_container ul li
+  {
+   width: 260px;
+  }
+
+
+}
+
+
+
+@media (max-width : 345px) {
+/*    #profilepic_others_id .blank_messanger
+   {   
+
+right: 16px;
+      
+  }
+ */  #profilepic_others_id .blank_messanger,
+  #profilepic_others_id .blank_messanger
+   .container,   #profilepic_others_id .blank_messanger .fixed 
+
+  {
+   width: 240px;
+  }
+
+/*   .blank_messanger .fixed 
+  {
+   width: 270px;
+  }
+ */
+  .blank_messanger section div, .blank_messanger #search input,
+  .blank_messanger .container ul, #blank #messanger_container ul li
+  {
+   width: 220px;
+  }
+  #blank .container ul li img, .blank_menu .container ul li svg {
+
+   width: 30px;
+   height: 30px;
+  }
+  .blank_messanger ul li section
+  {
+   width: 140px;
+  }
+}
+
+
+
+
+
+
+
+
+@media (max-width : 273px) {
+   #profilepic_others_id .blank_messanger
+   {   
+ position: fixed;
+left: 16px;
+      width: 160px;
+  }
+  #profilepic_others_id .blank_messanger.container,
+     #profilepic_others_id .blank_messanger .fixed ,   #blank #messanger_container ul li
+  {
+   width: 144px;
+  }
+
+/*   .blank_messanger .fixed 
+  {
+   width: 270px;
+  }
+ */
+   #blank #messanger_container ul li
+{
+   height: 150px;
+}
+  #blank .container ul li img, .blank_menu .container ul li svg {
+
+   width: 30px;
+   height: 30px;
+  }
+  .blank_messanger ul li section,.blank_messanger .fixed .text,
+  .blank_messanger section div, .blank_messanger #search input
+
+  {
+   width: 135px;
+  }
+}

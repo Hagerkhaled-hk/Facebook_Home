@@ -1,0 +1,347 @@
+
+body
+{
+    background-color:#f0f2f5;
+    margin: 0%;
+    padding: 0%;
+    font-family:'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+
+letter-spacing:0.1px;
+}
+
+::-webkit-scrollbar-thumb
+ {   
+    background-color: #f0f2f5;
+
+    border-radius: 5px;
+    margin-top: 20px;
+}
+:hover::-webkit-scrollbar-thumb
+{    background-color:rgb(189, 188, 188);
+
+
+}
+::-webkit-scrollbar
+{
+    background-color: #f0f2f5;
+    width: 7px;
+    
+}
+
+nav .icon_search .icon i
+{
+color:#1877F2;
+
+}
+
+
+i{
+color: #5a5c63;
+}
+
+.profilepic_others i
+{
+    color: black;
+}
+
+nav
+{
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    display:flex;
+  justify-content: space-between;
+  
+}
+
+nav .home_others,.icon_search,.profilepic_others
+{
+    margin-top: auto;
+    height: 50px;
+}
+ 
+
+.icon i
+{
+    font-size: 35px;
+    cursor: pointer;
+    position: relative;
+    z-index: 80;
+}
+
+.profilepic_others div ,.profilepic_others div img,.search div
+{ 
+  display: flex;
+    width: 35px;
+    height: 35px;
+}
+.icon_search
+{
+    position: relative;  
+    display: flex;
+     width: 257px;
+     margin-left:16px ;
+
+}
+.icon_search div ,.icon_search form
+{
+   
+    margin: auto 5px;
+
+}
+.search::before,.search_social::before
+{
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600; /* Required for solid icons */
+    margin-right: 8px;
+    color: #5a5c63;
+    position: absolute;
+  
+    opacity: 0.7;
+    transition-delay: 0.2s;
+
+ 
+    
+} 
+.search_social::before{
+    top:33%;
+
+    left: 25%;
+
+}
+.search::before
+{
+    border-radius: 50%;
+    padding: 8px;
+    top:15%;
+    left: 22%;
+    cursor: pointer;
+
+
+}
+
+.icon_search .search:focus .blank
+{
+
+    visibility: visible;
+}
+.icon_search:focus-within .search input 
+{
+    display: block;
+}
+
+
+
+.icon_search:focus-within .search::before {
+visibility: hidden;   
+transition-delay: 0.1ms;
+
+}
+.search input:focus ,.search_social input:focus  
+{
+    border-style: none;
+    outline-style: none;
+    
+
+}
+
+.search input:focus::placeholder
+{
+
+padding-left:5%;
+
+}
+
+.search
+{
+    z-index: 100;
+    padding-left: 7px;  
+/*  new
+ */    
+}
+
+.search input,.search_social input
+{
+    height: 35px;
+    width: 207px;
+    border-radius: 40px;
+ background-color: #f0f2f5;
+    border-style: none;
+}
+
+.search input::placeholder,.search_social input::placeholder
+{
+    padding:12% ;
+    transition-duration:0.3s;
+}
+
+
+.home_others
+{
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:6.125%;
+    
+    
+}
+
+.home_others li
+{
+    width: 52.60px;
+    height: 35;
+    margin: auto auto;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.home_others li:not(.home):hover 
+{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f0f2f5;
+}
+
+.home_others .home 
+{
+    cursor: pointer;
+border-bottom:solid  #0064D1 2px;
+
+}
+.home_others .home i
+{
+    color:#0064D1 ;
+}
+
+.home_others ul
+{
+    width: 375px;
+    height: 35px;
+    padding-left: 16px;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+nav ul
+{ 
+    list-style: none;
+}
+nav ul li
+{
+    display:inline-block;
+}
+
+.profilepic_others
+{
+    margin-left: 11.456%;
+    margin-right:2%;
+ 
+}
+
+
+.profilepic_others div:not(#blank,#blank .container ,#blank .container div,#blank div) 
+{ 
+    margin-left: 5px;
+    background-color: #e7eaed;
+    border-radius: 50%;
+
+   
+} 
+
+#profilepic_others_icon:focus-within i
+{
+    color: #0064D1;
+} 
+
+
+.profilepic_others div:not(#blank,#blank .container ,#blank .container div,#blank div):hover
+{
+cursor: pointer;
+    background-color: #c8cbcf ;
+}
+.profilepic_others div:not(#blank,#blank .container ,#blank .container div,#blank div):focus
+{
+    background-color: #Ebf5ff;
+
+}
+.profilepic_others div ,.profilepic_others
+{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width : 1022px) {
+
+    
+    .search::before
+    {
+        background-color: #f0f2f5;
+/*         position: static;
+ */
+    }
+    .search input::placeholder
+    {
+        transition-duration: 0s;
+    }
+  
+
+     .search input {
+ display: none;
+
+/* margin-bottom:50px;
+ */}
+
+    .profilepic_others
+    {
+        margin-left: 1.456%;
+    }
+    .home_others
+    {
+        margin-left: -11.875%;
+    }
+}
+    
+
+    @media (max-width : 756px)
+    {
+        .profilepic_others
+        {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+        .home_others
+        {
+            margin-left: -18.875%;
+                }
+    }
+
+
+    @media (max-width : 700px)
+    {
+        .home_others
+        {
+display: none;                }
+    }
+
+
+
+@media (max-width:450px) {
+    
+
+
+    .search::before
+    {
+        background-color: #f0f2f5;
+        position: static;
+
+    }
+
+}

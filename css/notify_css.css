@@ -1,0 +1,277 @@
+.profilepic_others .blank_notification
+{
+            visibility:hidden;
+  
+ }
+ .profilepic_others .notfy:focus-within+.blank_notification,.blank_notification:hover
+{
+     visibility: visible;
+ 
+}
+.blank_notification #messanger_container  ul li
+{
+height:60px;
+} 
+
+.blank_notification .container,.blank_notification .fixed
+{
+  width: 276.13px; 
+ margin-bottom: 2px;
+}
+
+.blank_notification .container,.blank_notification .container ul
+{    height:fit-content;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+/* changed
+ */.blank_notification .container,.blank_notification .container .earlier_ul{
+    display: block;
+/*     margin-top: -10px;
+ */
+ margin-top:-3px;
+}
+/* unread
+ */.blank_notification  .fixed .text .community 
+{
+    width: 60px;
+}
+.blank_notification .fixed .text
+{
+    width: 119px;
+}
+.blank_notification .fixed .chats .icons
+{
+    width: 23px;
+}
+.blank_notification  ul li section
+{
+    margin-top: 5px;
+    position: relative;
+}
+
+.blank_notification  ul li section p span
+{
+    font-weight:400;
+
+}
+.blank_notification  ul li section:not(.unseen) p,
+.blank_notification  ul li section:not(.unseen) small
+{
+  color: #6d7074;
+  
+}
+
+.blank_notification  ul li .unseen small,
+.blank_notification .text2 .see_all
+
+{
+    color:  #0064D1;
+}
+
+.blank_notification .text2 
+{   justify-content: space-between;
+    display: flex;
+    margin-left: 4px;
+ 
+}
+.blank_notification .text2 p
+{
+font-size: 13px;
+font-weight:500;
+}
+
+.blank_notification .text2 .see_all
+{
+    font-weight:400;
+    cursor: pointer;
+    justify-content: center;
+    display: flex
+;
+    align-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+    
+}
+.blank_notification .text2 .see_all:hover{
+    background-color: #f0f2f5;
+
+}
+
+.see_link ,.blank_pic .fixed div button 
+{
+    border-radius: 4px;
+    border:none;
+    background-color: #c8cbcf84;
+    font-weight: 500;
+    color: black;
+
+
+      cursor: pointer;   
+      
+}
+.see_link 
+{
+    text-decoration: none;
+    width: 93%;
+     height: 20px;
+       margin: 10px;
+      padding: 14px;
+      line-height: 0px;
+      text-align: center; 
+
+
+
+}
+
+
+
+.blank_notification #messanger_container    ul li section::after
+{
+
+    left: -20px;
+   top:25px;
+   background-color:#e0e0ef;
+
+   border-radius: 50%;
+}
+.blank_notification #messanger_container    ul li .mention::after
+{
+content:url(https://img.icons8.com/glyph-neue/18/40C057/speech-bubble-with-dots.png)
+}
+.blank_notification #messanger_container    ul li .post::after
+{
+    content: url(https://img.icons8.com/fluency/18/groups--v2.png);
+    background-color:#e0e0ef;
+    box-shadow:1px 1px 2px #6781ac ;
+ 
+
+}
+
+.blank_notification #messanger_container  ul li .share::after{
+content:url(https://img.icons8.com/material-rounded/18/22C3E6/details-popup.png);
+
+}
+
+
+
+
+
+
+@media (max-width : 700px) {
+    
+
+.blank_notification
+{
+    overflow-x: hidden;
+}
+.blank_notification section div
+
+{
+width:346px; 
+}
+
+}
+
+/* 
+ 
+@media (max-width : 427px) {
+    #profilepic_others_id .blank_notification
+    {      position: fixed;
+       left: 40px;
+   }
+ 
+ } */
+
+
+ @media (max-width :427px) {
+    #profilepic_others_id .blank_notification
+    {
+
+
+width: 240px;
+    }
+ 
+
+  #profilepic_others_id .blank_notification
+    .blank_messanger .container ul,     #profilepic_others_id .blank_notification #messanger_container ul li
+    {
+        width: 240px;
+    }
+
+
+    .blank_menu .container ul li section, .list_create ul li p,     #profilepic_others_id .blank_notification
+    .blank_messanger ul li section, .blank_notification ul li section
+    {
+        width: 89px;
+    }
+
+    #blank .container ul li p,     #profilepic_others_id .blank_notification
+    .blank_messanger .fixed .text, .blank_notification .fixed .text
+    {
+        width: 153px;
+    }
+
+    .see_link
+    {
+        width: 55%;
+    }
+
+ }
+
+
+ @media (max-width : 345px) {
+
+    #profilepic_others_id .blank_notification
+{
+    right: 16px;
+}
+ }
+
+
+ @media (max-width : 273px) {
+
+    #profilepic_others_id .blank_notification
+    {
+        left: 15px;
+        position: fixed;
+width: 160px;
+    }
+ 
+
+    #profilepic_others_id .blank_notification
+    .blank_messanger .container ul,     #profilepic_others_id .blank_notification #messanger_container ul li
+
+    {
+
+        height: 200px;
+
+        width: 140px;
+    } 
+
+
+    .blank_menu .container ul li section, .list_create ul li p,     #profilepic_others_id .blank_notification
+    .blank_messanger ul li section, .blank_notification ul li section
+    {
+/*         height: 100px;
+ */        width: 20px;
+    }
+
+    #blank .container ul li p,     #profilepic_others_id .blank_notification
+    .blank_messanger .fixed .text, .blank_notification .fixed .text
+    {
+        width: 80px;
+    }
+
+    .see_link
+    {
+        width: 35%;
+        font-size: 9px;
+    }
+
+
+ }
