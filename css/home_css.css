@@ -28,18 +28,27 @@ letter-spacing:0.1px;
     
 }
 
-nav .icon_search .icon i
+nav .icon_search .icon i,
+nav .icon_search .icon svg
 {
 color:#1877F2;
 
 }
 
 
-i{
+i,svg{
 color: #5a5c63;
 }
 
-.profilepic_others i
+svg{
+
+    width: 21px;
+    height: 20px;
+    
+}
+
+.profilepic_others i,
+.profilepic_others svg
 {
     color: black;
 }
@@ -61,7 +70,7 @@ nav .home_others,.icon_search,.profilepic_others
 }
  
 
-.icon i
+.icon i, .icon svg
 {
     font-size: 35px;
     cursor: pointer;
@@ -164,7 +173,7 @@ padding-left:5%;
 .search input,.search_social input
 {
     height: 35px;
-    width: 207px;
+    width: 250px;
     border-radius: 40px;
  background-color: #f0f2f5;
     border-style: none;
@@ -190,7 +199,7 @@ padding-left:5%;
 
 .home_others li
 {
-    width: 52.60px;
+    width: 75px;
     height: 35;
     margin: auto auto;
 
@@ -212,7 +221,7 @@ align-items: center;
 border-bottom:solid  #0064D1 2px;
 
 }
-.home_others .home i
+.home_others .home svg
 {
     color:#0064D1 ;
 }
@@ -254,7 +263,8 @@ nav ul li
    
 } 
 
-#profilepic_others_icon:focus-within i
+#profilepic_others_icon:focus-within i,
+#profilepic_others_icon:focus-within svg
 {
     color: #0064D1;
 } 

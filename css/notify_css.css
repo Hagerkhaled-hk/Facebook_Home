@@ -209,9 +209,10 @@ width: 240px;
     {
         width: 89px;
     }
-
-    #blank .container ul li p,     #profilepic_others_id .blank_notification
-    .blank_messanger .fixed .text, .blank_notification .fixed .text
+    #profilepic_others_id .blank_notification
+    ul li p,     #profilepic_others_id .blank_notification
+    #profilepic_others_id .blank_notification
+    .fixed .text, .blank_notification .fixed .text
     {
         width: 153px;
     }

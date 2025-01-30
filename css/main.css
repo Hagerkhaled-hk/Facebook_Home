@@ -1,8 +1,141 @@
-
+:root
+{
+    --hover_color: #65686c16;
+    --main_color: #65686C;
+}
 main
 {
     width: 100%;
     height: 100vh;
-    grid-column: 1fr 2fr 1fr;
-    background-color: blue;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    font-weight: bold;
+}
+
+main > *
+{
+    margin-top: 5px;
+}
+aside
+{
+/*     background-color: purple;
+ */}
+section
+{
+/*     background-color: plum;
+ */
+}
+
+
+main p
+{
+    background:none;
+}
+
+ main img ,
+ main aside:first-child  div  ul:first-child > .seeMore_click div,
+ .seeless_li div
+{
+    width: 30px;
+    height: 30px ;
+    border-radius:50% ;
+}
+ 
+main aside
+{
+    overflow-y: scroll;
+padding : 5px 20px;
+padding-right:0px ;
+}
+
+main aside:first-child div ul:first-child 
+{
+
+    margin: 0px;
+padding: 0px;
+width: 100%;
+}
+
+main aside:first-child ul li
+{
+display: flex;
+align-items:center ;
+/* background-color: beige;
+ */width: 95%;
+cursor: pointer;
+padding: 5px;
+border-radius: 2px;
+
+}
+
+main aside:first-child ul li p 
+{
+    margin-left: 10px;
+    font-size: 11px;
+font-weight: bold;
+}
+
+main aside:first-child ul li:hover
+{
+    background-color: var(--hover_color);
+
+
+
+}
+
+
+
+
+main aside:first-child div >  ul:first-child  > li:last-child  
+{
+   display: none;
+   
+
+}
+
+
+
+main aside:first-child    ul:first-child > .seeMore_click:focus + li:last-child
+{
+display: block;
+border-radius: 0px;
+/* background-color: black;
+ */padding: 0px;
+}
+main aside:first-child    ul:first-child > .seeMore_click:focus
+{
+
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+
+
+main aside:first-child    ul:first-child > .seeMore_click div,
+.seeless_li div{
+background-color: #e7eaed;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+main aside:first-child    ul:first-child  .seeMore_ul li
+{
+ width: 100%;
+}
+
+hr
+{
+    color: var(--main_color);
+    opacity:0.7;
+}
+main aside  > p
+{
+margin: 5px ;
+color: var(--main_color);
+font-size: 12px;
+opacity: 0.7;
 }

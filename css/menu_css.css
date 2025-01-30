@@ -390,9 +390,16 @@
     width: 150px;
 }
  
-    #blank .list_menu ul li  {
+#profilepic_others_id .blank_menu  .list_menu ul li  {
+        height: 140px;
         width: fit-content;
     }
+    
+    #profilepic_others_id .blank_menu  .list_menu ul li p,
+    #profilepic_others_id .blank_menu .list_create ul li {
+width: fit-content;
+    }
+
 
 
     

@@ -13,6 +13,9 @@ transition: 0.15s;
 border-radius: 4px;
 box-shadow: -8.5px -8.5px 17px  #0000007a;
       visibility: hidden;
+
+      --Width : 290px
+
  
 }
  
@@ -230,4 +233,60 @@ cursor: pointer;
 {
     background-color: #c8cbcf;
 
+}
+
+
+ @media (max-width :300px) {
+
+    .icon_search .blank
+    {
+
+        width:250px;
+     }
+     .blank li
+     {
+        width: 220px;
+     }
+     .icon_search .blank .text
+     {
+width: 225px;
+     }
+     .search input
+     {
+        width: 160px;
+     }
+}
+ 
+
+
+
+
+@media (max-width : 255px) {
+
+    .icon_search .blank
+    {
+
+        width:150px;
+     }
+     .blank li
+     {
+        width: 120px;
+        height: 70px;
+     }
+     .icon_search .blank .text
+     {
+width: 125px;
+     }
+     .search input
+     {
+        width: 60px;
+     }
+     .blank li small,     .blank li i
+     {
+    top: 33px;
+     }
+     .blank li i
+     {
+        right: 5px;
+     }
 }

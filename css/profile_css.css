@@ -149,7 +149,7 @@ margin-top: 2px;
     width: 20px;
 }
 
-.blank_pic .rights
+.blank_pic .rights,main .rights
 {
     width: fit-content;
     height: fit-content;
@@ -157,7 +157,9 @@ margin-top: 2px;
     display: block;
  }
 
-.blank_pic .rights a:hover
+.blank_pic .rights a:hover,
+main .rights a:hover
+
 {
     text-decoration: underline;
 }
@@ -174,18 +176,21 @@ margin-top: 2px;
 
 }
 
-.blank_pic .rights a
+.blank_pic .rights a,
+main .rights a
 {
     margin-left: 2.5px;
     font-weight: 500;
     text-decoration: none;
 }
-.blank_pic .rights p ,.blank_pic .rights a
+.blank_pic .rights p ,.blank_pic .rights a,
+main .rights p ,main .rights a
 {
     color :#65686C;
 
 }
-.blank_pic .rights p 
+.blank_pic .rights p ,
+main .rights p 
 {
 margin: -1px 2.5px;}
 .blank_pic  .fixed hr
@@ -268,7 +273,7 @@ margin: -1px 2.5px;}
  */   }
  .blank_pic .fixed div button
  {
-    width: 210px;
+    width: 193px;
  }
  #profilepic_others_id .blank_pic,  #profilepic_others_id .blank_pic .container
  {
@@ -276,17 +281,23 @@ margin: -1px 2.5px;}
  }
  .blank_pic #pic_container ul li,.blank_pic .fixed
  {
-    width: 218px;
+    width: 200px;
  }
  .blank_pic #pic_container ul li p
  {width: 100px;
 
-margin-right: 73px;
+margin-right: 60px;
 }
  .blank_pic .rights
  {
     font-size: 7px;
  }
+ .blank_pic .fixed #bdi, .blank_pic .fixed hr
+ {
+    width: 200px;
+ }
+
+ 
 }
 
 @media (max-width : 305px) {
@@ -313,7 +324,7 @@ margin-right: 73px;
  .blank_pic .fixed div button
  {
     height: 50px;
-    width: 110px;
+    width: 93px;
  }
  #profilepic_others_id .blank_pic,  #profilepic_others_id .blank_pic .container
  {
@@ -322,7 +333,7 @@ margin-right: 73px;
  .blank_pic #pic_container ul li,.blank_pic .fixed
  {
     height: fit-content;
-    width: 110px;
+    width: 98px;
  }
  .blank_pic .fixed #bdi, .blank_pic .fixed hr
  {
