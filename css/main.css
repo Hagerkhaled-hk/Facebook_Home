@@ -8,7 +8,7 @@ main
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 0.8fr 2fr 0.8fr;
     font-weight: bold;
 }
 
@@ -36,19 +36,20 @@ main p
  main aside:first-child  div  ul:first-child > .seeMore_click div,
  .seeless_li div
 {
-    width: 30px;
-    height: 30px ;
+
+    width: 33px;
+    height: 33px ;
     border-radius:50% ;
 }
  
 main aside
 {
     overflow-y: scroll;
-padding : 5px 20px;
+padding : 5px ;
 padding-right:0px ;
 }
 
-main aside:first-child div ul:first-child 
+main aside:first-child div ul
 {
 
     margin: 0px;
@@ -56,7 +57,7 @@ padding: 0px;
 width: 100%;
 }
 
-main aside:first-child ul li
+main aside ul li
 {
 display: flex;
 align-items:center ;
@@ -68,15 +69,17 @@ border-radius: 2px;
 
 }
 
-main aside:first-child ul li p 
+main aside ul li p 
 {
     margin-left: 10px;
-    font-size: 11px;
+    font-size: 13px;
 font-weight: bold;
 }
 
-main aside:first-child ul li:hover
-{
+main aside div > ul li:not(.seeMore_li):hover
+/* main aside:nth-of-type(2) .contact .one:hover::after,
+main aside:nth-of-type(2) .contact .two:hover::before
+ */{
     background-color: var(--hover_color);
 
 
@@ -86,7 +89,7 @@ main aside:first-child ul li:hover
 
 
 
-main aside:first-child div >  ul:first-child  > li:last-child  
+main aside:first-child div >  ul:nth-last-of-type(1)  > li:last-child  
 {
    display: none;
    
@@ -95,14 +98,14 @@ main aside:first-child div >  ul:first-child  > li:last-child
 
 
 
-main aside:first-child    ul:first-child > .seeMore_click:focus + li:last-child
+main aside:first-child    ul:nth-last-of-type(1) > .seeMore_click:focus + li:last-child
 {
 display: block;
 border-radius: 0px;
 /* background-color: black;
  */padding: 0px;
 }
-main aside:first-child    ul:first-child > .seeMore_click:focus
+main aside:first-child    ul:nth-last-of-type(1) > .seeMore_click:focus
 {
 
     height: 0px;
@@ -113,10 +116,10 @@ main aside:first-child    ul:first-child > .seeMore_click:focus
 
 
 
-main aside:first-child    ul:first-child > .seeMore_click div,
+main aside:first-child    ul:nth-last-of-type(1) > .seeMore_click div,
 .seeless_li div{
-background-color: #e7eaed;
-display: flex;
+/* background-color: #e7eaed;
+ */display: flex;
 justify-content: center;
 align-items: center;
 
@@ -132,10 +135,206 @@ hr
     color: var(--main_color);
     opacity:0.7;
 }
-main aside  > p
+main aside div > p
 {
-margin: 5px ;
+margin:5px ;
+margin-bottom: 0px;
 color: var(--main_color);
-font-size: 12px;
+font-size: 14px;
 opacity: 0.7;
+letter-spacing:0.5px;
+font-weight: 500;
+}
+
+ main aside:first-child > div:nth-of-type(2),
+ main aside:nth-of-type(2) .contact li,
+ main aside:nth-of-type(2) .Sponsored li,
+ main aside:nth-of-type(2) .contact
+{
+    position: relative;
+}
+ 
+ main aside:first-child > div:nth-of-type(2) ul ,
+ main aside:last-child > div ul 
+{
+    margin-top: 5px;
+    padding: 0px;
+}
+ 
+
+
+ main aside:first-child > div:nth-of-type(2):hover::before
+{
+    content: "Edit";
+    color: #0064D1; 
+    margin-right: 3px;
+     font-size: 12px;
+width:28px;
+height:28px;
+border-radius: 2px;
+font-weight: normal; 
+position: absolute;
+right: 5px;
+}
+ 
+main aside:nth-of-type(2) .Sponsored ul
+{
+list-style: none;
+}
+
+
+main aside:nth-of-type(2) 
+{
+/*     background-color: purple;
+ */}
+
+main aside:nth-of-type(2) .Sponsored ul 
+{
+
+/*     background-color: palegoldenrod;
+ */    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 2px;
+}
+main aside:nth-of-type(2)  ul li 
+{
+/*     background-color:aliceblue;
+ */    display: flex;
+align-items: center;    
+cursor: pointer;
+}
+
+
+main aside:nth-of-type(2) .Sponsored ul li img
+{
+    width: 90px;
+    height:95px;
+    border-radius: 5px;
+    margin:3px;
+}
+main aside:nth-of-type(2) .Sponsored ul li section
+{
+    margin-left: 5px;
+}
+main aside:nth-of-type(2) .Sponsored ul li section p{
+    font-size: 12px;
+
+
+    margin: 0px 0px  3px 0px;
+}
+
+main aside:nth-of-type(2) .Sponsored ul li section small,
+main aside:nth-of-type(2) .community_chat ul li section small
+
+{
+    font-size: 10px;
+    color: var(--main_color);
+    font-weight: normal;
+}
+
+
+
+main aside:nth-of-type(2) .birth span
+{
+    font-weight: normal;
+}
+
+main aside:nth-of-type(2) .contact li::before
+{
+    content: url(https://img.icons8.com/ios-glyphs/13/40C057/full-stop--v1.png);
+    left: 0px;
+    position: absolute;
+    left: 24px;
+    top: 33px;
+}
+
+
+ main aside:nth-of-type(2) .Sponsored li::after
+{
+    content:url(https://img.icons8.com/ios-glyphs/13/5a5c70/ellipsis.png);
+    position: absolute;
+     right: 22px;
+    top:5px;
+     height: 27px;
+       width: 29px;
+    border-radius: 50%;
+/*     background-color: white;
+ */    border: 1px solid #5a5c7040;
+    box-shadow:0px 0px 3px #5a5c70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transition-delay:2ms ;
+    }
+ 
+      main aside:nth-of-type(2) .Sponsored li:hover::after
+    {
+        visibility: visible;
+    }
+
+    main aside:nth-of-type(2) .contact::before
+    {
+        content: "\f002";
+        font-family: "Font Awesome 5 Free";
+        color: #5a5c63;
+font-size: 11px;
+        right: 40px;
+/*     background-color: white;
+ */    }
+
+
+    main aside:nth-of-type(2) .contact::after
+    {
+        content:url("https://img.icons8.com/ios-glyphs/11/5a5c70/ellipsis.png");
+ right: 5px;
+
+/*  background-color: white;
+ */
+    }
+    main aside:nth-of-type(2) .contact::before,
+    main aside:nth-of-type(2) .contact::after
+    { top:-1px;
+        position: absolute;
+
+        cursor: pointer;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+
+    }
+
+
+    main aside:nth-of-type(2) .community_chat ul li 
+   {
+
+    justify-content: space-between;
+}
+main aside:nth-of-type(2) .community_chat ul li section p
+{
+    width: fit-content;
+    margin-left: 37px;
+    margin-bottom: 5px;
+}
+
+main aside:nth-of-type(2) .community_chat ul li section small
+{
+    font-size: 11px;
+}
+
+main aside:nth-of-type(2) .group_chat li:last-child div
+{
+    background-color: #5a5c7040;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+align-items: center;
+border-radius: 50%;
 }
