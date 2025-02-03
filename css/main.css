@@ -316,6 +316,22 @@ font-size: 11px;
 
     justify-content: space-between;
 }
+main aside:nth-of-type(2) .community_chat ul li img
+{
+    width: 20px;
+    height: 20px;
+}
+main aside:nth-of-type(2) .community_chat ul li div
+{ 
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #5a5c6380;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 main aside:nth-of-type(2) .community_chat ul li section p
 {
     width: fit-content;
@@ -338,3 +354,39 @@ main aside:nth-of-type(2) .group_chat li:last-child div
 align-items: center;
 border-radius: 50%;
 }
+
+main aside:nth-of-type(2) .group_chat li 
+{
+    position: relative;
+}
+
+main aside:nth-of-type(2) .group_chat li:not(li:first-child) 
+{
+    position: relative;
+}
+main aside:nth-of-type(2) .group_chat li:not(li:first-child) img 
+{
+    width: 20px;
+    height: 20px;
+    z-index: 15;
+}
+
+main aside:nth-of-type(2) .group_chat li:not(li:first-child) .merge_photo
+{
+    z-index: 14;
+    position: absolute;
+    left: 15px;
+    top:7px
+}
+
+
+main aside:nth-of-type(2) .group_chat li:not(li:last-child)::before
+{
+    content: url(https://img.icons8.com/ios-glyphs/13/40C057/full-stop--v1.png);
+    left: 0px;
+    position: absolute;
+    left: 24px;
+    top: 33px;
+}
+
+

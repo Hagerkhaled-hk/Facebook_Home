@@ -42,8 +42,8 @@ color: #5a5c63;
 
 svg{
 
-    width: 21px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     
 }
 .profilepic_others svg
@@ -203,7 +203,7 @@ padding-left:5%;
 
 .home_others li
 {
-    width: 75px;
+    width:100px;
     height: 40;
     margin: auto auto;
 
@@ -222,7 +222,7 @@ align-items: center;
 .home_others .home 
 {
     cursor: pointer;
-border-bottom:solid  #0064D1 2px;
+border-bottom:solid  #0064D1 2.5px;
 
 }
 .home_others .home svg
@@ -232,7 +232,7 @@ border-bottom:solid  #0064D1 2px;
 
 .home_others ul
 {
-    width:430px;
+    width:550px;
     height: 35px;
     padding-left: 16px;
     justify-content: center;
