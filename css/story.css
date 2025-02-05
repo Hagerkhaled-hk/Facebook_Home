@@ -1,18 +1,203 @@
  
  .timeline .story
 {
+    
     padding: 5px;
+    display: flex;
+justify-content: flex-start;
+gap: 10px;
+overflow: hidden;
+position: relative;
+height: max-content;
+
 }
  .timeline .story section
  {
-    background-color: beige;
 width: 120px;
-height: 100%;    
-border-radius: 20px;
+height: 200px;    
+border-radius: 15px;
+overflow: hidden;
+cursor: pointer;
+position: relative;
+z-index: 10;
+ flex-shrink: 0;
+ 
+
+
+ }
+
+ .timeline .story section:nth-of-type(1)::before
+ {
+
+    content: "Create story";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    color: black;
+    background-color:white;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+
+ }
+
+ .timeline .story section:nth-of-type(1) div
+ {
+position: absolute;
+bottom:30px;
+left:40px;
+background: #0866FF;
+border: 4px solid white;
+border-radius: 50%;
+padding: 5px;
+z-index: 12;
+ }
+
+ .timeline .story section:nth-of-type(1) div svg
+ {
+    color: white;
+    width:20px;
+    height :20px;
  }
 
  .timeline .story section img{
     width: 100%;
     height: 100%;
     border-radius:0px ;
+    object-fit: cover;
  }
+ .timeline .story section:hover img{
+    animation:story_animate 0.2s 0.1s forwards ;
+ }
+
+
+ .timeline .story section:not(section:nth-of-type(1))::before
+{
+    content:"";
+    background-size: cover;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+top: 15px;
+left: 13px;
+border-radius: 50%;
+border: 4px solid #0866FF;
+z-index: 11;
+
+
+}
+
+.timeline .story .one_story::before
+{
+    background: url("../imgs/man2.jpeg") center no-repeat;
+
+}
+.timeline .story .two_story::before
+{
+    background: url("../imgs/gohst.jpeg") center no-repeat;
+
+}
+
+.timeline .story .three_story::before
+{
+    background: url("../imgs/teddy_bear.jpeg") center no-repeat;
+
+}
+
+.timeline .story .four_story::before
+{
+    background: url("../imgs/cloud.jpeg") center no-repeat;
+
+}
+.timeline .story .five_story::before
+{
+    background: url("../imgs/hijab_women.jpeg") center no-repeat;
+
+}
+.timeline .story .sex_story::before
+{
+    background: url("../imgs/punny.jpeg") center no-repeat;
+
+}
+
+/* 
+.timeline .story .three_story:hover ::before
+{
+    background-color:black;
+}
+ */
+
+.timeline .story section:not(section:nth-of-type(1)) p 
+{
+
+    position: absolute;
+    bottom: 0px;
+    left:5px;
+    color: white;
+    font-size: 13px;
+
+}
+.timeline .story section:not(section:nth-of-type(1)) .arabic
+{
+left: 60px;
+}
+
+.timeline .story button
+{
+
+    position: absolute;
+    top: 70px;
+    right:20px;
+z-index: 20;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+border: none;
+outline: none;
+cursor: pointer;
+background-color: white;
+}
+
+.timeline .story .back
+{
+    left: 20px;
+    visibility: hidden;
+    transition-delay: 0.6s;
+
+}
+.timeline .story .forward:focus ~ section
+{
+
+
+ transform: translateX(-510px);
+ transition-duration: 0.5s;
+ 
+}
+.timeline .story .forward:focus + .back
+{
+
+    visibility: visible;
+}
+
+.timeline .story .forward:not(:focus) ~ section
+{
+
+
+ transition-duration: 0.5s;
+
+
+
+
+} 
+ 
+
+ @keyframes story_animate{
+100%  {
+transform: scale(1.03);
+    }
+ }
+

@@ -1,0 +1,111 @@
+.timeline
+{
+    display: grid;
+    grid-template-rows:0.6fr 1fr 2fr;
+    box-sizing: border-box;
+padding: 5px 125px;
+gap: 10px;
+width: fit-content;
+}
+.share_post
+{
+    border-radius: 10px;
+
+background-color: white;
+padding: 5px;
+height: max-content;
+
+ 
+}
+.share_post section:first-child
+{
+    height: 40%;
+    gap: 5px;
+    margin-top: 2%;
+
+}
+.share_post section:first-child img
+{
+    width: 37px;
+    height: 37px;
+}
+.share_post section:last-child
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* background-color: blueviolet;
+ */}
+.share_post section,.share_post ul ,.share_post ul li
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share_post section input
+{
+    width: 85%;
+    height:36px;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: #f0f2f5;
+    cursor: pointer;
+
+}
+.share_post section input:hover
+{
+    background-color:rgba(128, 128, 128, 0.253);
+   
+}
+.share_post ul li:hover
+{
+    background-color: var(--hover_color);
+
+}
+
+.share_post section input::placeholder
+{
+    font-size: 15px;
+}
+.share_post ul ,.share_post ul li
+{
+    list-style: none;
+    font-size: 12px;
+}
+.share_post ul
+{
+     margin: 0px;
+    padding: 0px;
+
+}
+.share_post ul li
+{
+   cursor: pointer;
+    gap: 3px;
+    padding: 0px   30px;
+    border-radius: 5px;
+    height:35px;
+    color: #656565;
+    font-weight: 500;
+}
+
+.share_post ul li img 
+{
+    width: 23px;
+    height: 23px;
+    margin-right: 5px;
+    border-radius: 0px;
+}
+
+
+.share_post hr 
+{
+    width: 95%;
+    color: var(--main_color);
+    opacity: 0.3;
+}
+
+
