@@ -1,0 +1,93 @@
+
+.blank_menu .container:nth-of-type(2)
+{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+ @media (max-width: 1027px){
+
+.profilepic_others .blank_menu 
+{
+    overflow-y: scroll;
+}
+ .blank_menu::-webkit-scrollbar 
+{
+    width: 0px;
+    height: 0px;
+
+}
+ 
+
+
+
+.blank_menu .container:nth-of-type(2)
+{
+    width: 66%;
+    height: 100%;
+margin-bottom: 1vw;
+opacity: 1;
+}
+.blank_menu .container .shortcuts
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.blank_menu .container .shortcuts ul
+{
+    width: 90%;
+    margin-top: 10px;
+}
+
+.blank_menu .container .shortcuts ul li 
+{
+    gap:10px;
+    padding: 5px;
+}
+
+
+#profilepic_others_id .blank_menu .container:nth-of-type(1) 
+{
+    height: fit-content;
+    overflow: visible;
+}
+
+ }
+
+
+
+ @media  (max-width: 900px)
+ {
+
+    .blank_menu .container .shortcuts
+    {
+        width: 97%;
+    }
+
+ }
+
+
+
+ @media (max-width : 440px) {
+
+    .blank_menu .container .shortcuts 
+    {
+        width: 274px;
+        overflow-x: hidden;
+
+    }
+   
+
+
+ 
+    
+
+
+
+    
+}
+

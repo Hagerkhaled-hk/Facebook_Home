@@ -201,3 +201,26 @@ margin: 0px;
 
 }
 
+@media (max-width : 482px) {
+
+    .post,.share_post 
+    {
+        width: 100vw;
+    }
+    .post section .photo
+    {
+    height: 269px;
+    }
+
+    .post .comments ul li
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .share_post ul li
+    {  padding-left: 5px;
+        padding-right: 5px;
+
+    }
+}

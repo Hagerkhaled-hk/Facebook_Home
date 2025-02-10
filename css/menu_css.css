@@ -101,10 +101,16 @@
 .profilepic_others .blank_menu .container div:not(.list_menu, .list_create) {
     background-color: white;
     border: 1px solid #d0d3d7;
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
-.profilepic_others .blank_menu .social {
+.profilepic_others .blank_menu .container div:not(.list_menu, .list_create)::-webkit-scrollbar
+{
+    width: 0px;
+    height: 0px;
+}
+
+.profilepic_others .blank_menu   .container .social {
 
     /*      height:338px;
  */
@@ -117,7 +123,14 @@
 
     display: block;
     box-shadow: 0px 0px 5px #0000003d;
+    overflow-y: scroll;
 
+}
+
+.profilepic_others .blank_menu .social::-webkit-scrollbar
+{
+    width: 0px;
+    height: 0px;
 }
 
 .profilepic_others .blank_menu .create {
@@ -131,14 +144,17 @@
 
 .blank_menu .social p,
 .blank_menu .social div,
-.blank_menu .social form {
+.blank_menu .social form,
+.blank_menu .container .shortcuts p {
     margin: 16px 0px 0px 16px;
     width: 252.13px;
 
 }
 
 .blank_menu .social p,
-.create p {
+.create p,
+.blank_menu .container .shortcuts p
+ {
     font-size: 15px;
     font-weight: 500;
     width: fit-content;
@@ -190,7 +206,8 @@
 
 
 
-.blank_menu .container ul {
+.blank_menu .container ul ,
+.blank_menu .container .shortcuts ul     {
     padding: 0px;
     margin-top: 8px;
 
@@ -199,7 +216,8 @@
 /* from blank_menu
  */
 #blank .container ul li,
-.list_create ul li {
+.list_create ul li ,
+.blank_menu .container .shortcuts ul li{
 
     display: flex;
     justify-content: center;
@@ -227,7 +245,9 @@
 /* from blank_menu
  */
 #blank .container ul li img,
-.blank_menu .container ul li svg {
+.blank_menu .container ul li svg,
+.blank_menu .container .shortcuts ul li img
+   {
     width: 35px;
     height: 35px;
 }
@@ -235,7 +255,8 @@
 .blank_menu .container ul li section,
 .list_create ul li p,
 .blank_messanger ul li section,
-.blank_notification ul li section {
+.blank_notification ul li section ,
+.blank_menu .container .shortcuts ul { 
 
     height: 41px;
     width: 212px;
@@ -246,14 +267,17 @@
 
 
 .blank_menu .container ul .friends section,
-.blank_menu .container ul .groups section {
+.blank_menu .container ul .groups section,
+.blank_menu .container .shortcuts ul li
+    {
     height: 35px;
 }
 
 
 #blank .container ul li p,
 .blank_messanger .fixed .text,
-.blank_notification .fixed .text {
+.blank_notification .fixed .text ,
+.blank_menu .container .shortcuts ul li p    {
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
     letter-spacing: 0.1px;
     font-size: 14px;
@@ -276,14 +300,17 @@
 
 #blank .create .list_create li img,
 .blank_messanger .chats img,
-.blank_notification .chats img {
+.blank_notification .chats img
+{
     width: 15px;
     height: 15px;
 
 }
 
 
-.container .create .list_create li section {
+.container .create .list_create li section,
+.blank_menu .container .shortcuts li img
+ {
     width: 80px;
     height: 30px;
     border-radius: 50%;
@@ -311,7 +338,8 @@
 
 
 
-#blank .container .list_create ul li p {
+#blank .container .list_create ul li p,
+.blank_menu .container .shortcuts ul li p {
     margin: 19px 0px 0px 5px;
 }
 
@@ -323,7 +351,7 @@
     }
 }
 
-@media (max-width : 700px) {
+@media (max-width : 900px) {
     /* --------------menu----------------------*/
 
     .profilepic_others .blank_menu .container {
@@ -373,7 +401,8 @@
     }
 
     #profilepic_others_id .blank_menu .social,
-    #profilepic_others_id .blank_menu .create {
+    #profilepic_others_id .blank_menu .create 
+    {
         width: 274px;
         overflow-x: hidden;
 
@@ -392,11 +421,13 @@
  
 #profilepic_others_id .blank_menu  .list_menu ul li  {
         height: 140px;
-        width: fit-content;
     }
     
     #profilepic_others_id .blank_menu  .list_menu ul li p,
-    #profilepic_others_id .blank_menu .list_create ul li {
+    #profilepic_others_id .blank_menu .list_create ul li,
+    #profilepic_others_id .blank_menu  .list_menu ul li ,
+    .blank_menu .container .shortcuts ul li
+    {
 width: fit-content;
     }
 
@@ -404,28 +435,6 @@ width: fit-content;
 
     
 }
-
-
-/* @media (max-width : 392px) {
-     #profilepic_others_id .blank_menu {
-/*         left: 16px;
- */
-
-/* }
-
-}
- */
-
-
-
-/* @media (max-width : 359px) {
-    #profilepic_others_id .blank_menu {
-        position: fixed;
-
-       left: 3px;
-   }
-
-} */
 
 
 

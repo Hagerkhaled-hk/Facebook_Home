@@ -6,6 +6,7 @@
 padding: 5px 125px;
 gap: 10px;
 width: fit-content;
+overflow-x: hidden;
 }
 .share_post
 {
@@ -109,3 +110,140 @@ height: max-content;
 }
 
 
+@media (max-width : 1135px) {
+
+    .timeline
+    {
+  padding:5px 50px
+    }
+
+}
+
+@media (max-width : 1027px) {
+
+    main
+    {
+        grid-template-columns: 2fr 1fr;
+gap: 50px;
+    }
+
+    main aside:nth-of-type(1)
+    {
+display: none;
+    }
+}
+
+
+
+@media (max-width : 879px) {
+
+
+    main
+    {
+        grid-template-columns: 0.8fr;
+justify-content: center;
+align-items: center;
+
+margin-top:10px
+    }
+    main aside:nth-of-type(2)
+    {
+display: none;
+    }
+
+    .timeline
+    {
+        margin-top: -74px;
+    }
+
+}
+
+@media (max-width : 711px) {
+
+    main{
+    grid-template-columns:auto;
+    }
+
+     .timeline
+      {
+        padding:5px 70px;
+      }
+ 
+}
+
+
+
+@media (max-width : 711px) {
+    .timeline
+    {
+      padding:5px 40px;
+    }
+}
+
+ @media (max-width :554px) {
+
+    .timeline
+    {
+      padding:5px 25px;
+    }
+
+
+ }
+ @media (max-width :520px) {
+
+    .timeline
+    {
+
+padding-left: 10px;
+padding-right: 10px;
+    }
+
+} 
+
+
+
+@media (max-width :485px) {
+
+    .timeline
+    {
+
+padding-left: 0px;
+padding-right: 0px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+/* @media (max-width : 1135px) {
+
+    .timeline
+    {
+  padding:5px 50px
+    }
+
+}
+@media (max-width : 1073px) 
+{
+    .timeline
+    {
+ padding:5px 40px;
+    }
+
+    
+}
+
+@media (max-width : 969px) 
+{
+/*     .timeline
+    {
+ padding:5px 0px;
+    }
+}*/

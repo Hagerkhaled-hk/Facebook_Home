@@ -173,8 +173,8 @@ background-color: white;
 {
 
 
- transform: translateX(-510px);
- transition-duration: 0.5s;
+  transform: translateX(-510px);
+  transition-duration: 0.5s;
  
 }
 .timeline .story .forward:focus + .back
