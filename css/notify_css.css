@@ -177,15 +177,7 @@ width:346px;
 
 }
 
-/* 
- 
-@media (max-width : 427px) {
-    #profilepic_others_id .blank_notification
-    {      position: fixed;
-       left: 40px;
-   }
- 
- } */
+
 
 
  @media (max-width :427px) {
@@ -203,8 +195,7 @@ width: 240px;
         width: 240px;
     }
 
-
-    .blank_menu .container ul li section, .list_create ul li p,     #profilepic_others_id .blank_notification
+     #profilepic_others_id .blank_notification
     .blank_messanger ul li section, .blank_notification ul li section
     {
         width: 89px;

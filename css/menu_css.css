@@ -2,13 +2,12 @@
  */
 .profilepic_others #blank {
     position: absolute;
-    /*      height: 372px;
- */
+          height: 80vh;
+ 
     border-radius: 5px;
     display: block;
     box-shadow: 0px 0px 5px #0000003d;
     z-index: 90;
-    height: 80vh;
 
 }
 
@@ -16,6 +15,7 @@
     height: 100%;
 
 }
+
 
 
 .profilepic_others .blank_menu {
@@ -252,6 +252,7 @@
     height: 35px;
 }
 
+
 .blank_menu .container ul li section,
 .list_create ul li p,
 .blank_messanger ul li section,
@@ -286,6 +287,9 @@
     width: 200px;
 
 }
+
+
+
 
 .blank_menu .container ul li section small {
 
@@ -344,6 +348,25 @@
 }
 
 
+
+@media (min-width : 2656px) {
+    #profilepic_others_id .blank_menu
+    {
+        height: max-content;
+
+    }
+
+}
+
+@media (min-width : 1900px) {
+.profilepic_others #blank:not(.blank_menu)
+{
+height: max-content;
+
+    
+}
+}
+
 @media (max-width : 1022px) {
     #blank {
         right: -5px;
@@ -391,7 +414,10 @@
 
 
 
-
+.blank_menu .container .shortcuts ul li img
+{
+    margin-left: -30px;
+}
 }
 
 @media (max-width : 440px) {
@@ -421,9 +447,9 @@
  
 #profilepic_others_id .blank_menu  .list_menu ul li  {
         height: 140px;
-    }
+    } 
     
-    #profilepic_others_id .blank_menu  .list_menu ul li p,
+     #profilepic_others_id .blank_menu  .list_menu ul li p,
     #profilepic_others_id .blank_menu .list_create ul li,
     #profilepic_others_id .blank_menu  .list_menu ul li ,
     .blank_menu .container .shortcuts ul li
@@ -431,7 +457,10 @@
 width: fit-content;
     }
 
-
+    .blank_menu .container .shortcuts ul li img
+    {
+        margin-left: 0px;
+    }
 
     
 }
@@ -464,6 +493,7 @@ overflow-x: hidden;
     ,.blank_menu .social p
     ,.blank_menu .social hr {
         width: 150px;
+        height: fit-content;
     }
 
     .blank_menu .social hr
@@ -499,15 +529,7 @@ overflow-x: hidden;
 
 
 
-/* @media (max-widht : 282px)
-{
-    #profilepic_others_id .blank_menu {
-        right: 15px;
-    
-    }
-}
 
- */
 
 
 

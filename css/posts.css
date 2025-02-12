@@ -265,14 +265,15 @@ height: 30px;
 
 @media (max-width : 482px) {
 
-    .post,.share_post 
+  /*   .timeline > *
     {
-        width: 100vw;
-    }
+        width: 98vw;
+    
+    } */
     .post section .photo
     {
-    height: 269px;
-    }
+    height: 25%;
+    } 
 
     .post .comments ul li
     {
@@ -285,4 +286,6 @@ height: 30px;
         padding-right: 5px;
 
     }
-}
+}  
+
+

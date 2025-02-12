@@ -2,8 +2,8 @@
  .timeline .story
 {
     
-    padding: 5px;
-    display: flex;
+/*     padding: 5px;
+ */    display: flex;
 justify-content: flex-start;
 gap: 10px;
 overflow: hidden;

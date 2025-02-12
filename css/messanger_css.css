@@ -130,13 +130,19 @@ font-size: 22px;
  {
    overflow-y: scroll;
  }
- .blank_messanger .container,.blank_messanger .container ul
+ #profilepic_others_id .blank_messanger .container
  {
-   height: 100%;
-/*    height: 255px;
- */   padding: 0px;
- }
+   height:100%;
+ overflow-y: auto;
+ display: block;
 
+ 
+ 
+ }
+ .blank_messanger .container ul
+ {
+padding: 5px;
+ }
  .blank_messanger  ul li ,
  .blank_notification  ul li 
  {
