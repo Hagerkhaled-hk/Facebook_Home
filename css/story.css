@@ -173,7 +173,12 @@ background-color: white;
 {
 
 
-  transform: translateX(-510px);
+-webkit-transform: translateX(-510px);  
+-moz-transform: translateX(-510px);    
+-ms-transform: translateX(-510px);     
+-o-transform: translateX(-510px);       
+transform: translateX(-510px);         
+
   transition-duration: 0.5s;
  
 }
