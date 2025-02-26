@@ -87,21 +87,67 @@ font-size: 10px;
 {
     width: 100%;
     height: 350px;
+    position: relative;
 }
 
-.post section   .photo img
-{
+.post section   .photo img{
     width: 100%;
     height: 100%;
     border-radius: 0px;
     object-fit: cover;
-     object-position:center;
-     display: block;
- }
+    object-position:center;
+    display: block;
+}
+.post section   .photo video
+{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+   
+
+
+}
+.post section    .video
+{
+    
+    cursor: pointer;
+
+}
+
+
+.post section    .video .cover
+{
+    position: absolute;
+width: 100%;
+height: 100%;  
+}
+.post section .video .cover  .x1t2qqyw
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.461);
+    border-radius: 50%;
+
+}
+
+
+.post section .video .cover:focus
+{
+width: 0px;
+height: 0px;
+opacity: 0;
+
+}
+ 
+.post section .Sponsored img
+{
+
+object-fit: fill;
+}
 .post section .react
 {
-/*     background-color: black;
- */    width: 100%;
+   width: 100%;
     height: 59px;
     align-items: center;
     flex-direction: column;

@@ -128,7 +128,7 @@ nav .home_others,.icon_search,.profilepic_others
     border-radius: 50%;
     padding: 8px;
     top:15%;
-    left: 22%;
+    left: 55px;
     cursor: pointer;
 
 
@@ -386,17 +386,3 @@ height: 40px;
 display: none;                }
     }
 
-
-
-@media (max-width:450px) {
-    
-
-
-    .search::before
-    {
-        background-color: #f0f2f5;
-        position: static;
-
-    }
-
-}

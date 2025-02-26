@@ -348,6 +348,13 @@
 }
 
 
+@media (min-width : 760px) {
+    .profilepic_others #blank:not(.blank_menu ,.blank_pic)
+    {
+        height: 62vh;
+    }
+}
+
 
 @media (min-width : 2656px) {
     #profilepic_others_id .blank_menu
@@ -356,9 +363,15 @@
 
     }
 
+    main
+    {
+        width: 70%;
+        margin: 0px 50%;
+        transform: translateX(-50%);
+    }
 }
 
-@media (min-width : 1900px) {
+@media (min-width : 1500px) {
 .profilepic_others #blank:not(.blank_menu)
 {
 height: max-content;
@@ -374,7 +387,7 @@ height: max-content;
     }
 }
 
-@media (max-width : 900px) {
+@media (max-width : 855px) {
     /* --------------menu----------------------*/
 
     .profilepic_others .blank_menu .container {

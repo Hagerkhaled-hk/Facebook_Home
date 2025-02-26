@@ -132,30 +132,46 @@ font-weight:500;
 
 .blank_notification #messanger_container    ul li section::after
 {
+    content:"";
 
-    left: -20px;
-   top:25px;
+    left: -25px;
+   top:19px;
    background-color:#e0e0ef;
 
    border-radius: 50%;
+   transform: scale(0.8);
 }
 .blank_notification #messanger_container    ul li .mention::after
 {
-content:url(https://img.icons8.com/glyph-neue/18/40C057/speech-bubble-with-dots.png)
+
+background-image: url(https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/zDFPLc0_EM8.png);
+
+height: 27px; width: 27px;  background-position: 0px -1044px; background-size: auto; background-repeat: no-repeat; 
+
 }
 .blank_notification #messanger_container    ul li .post::after
 {
-    content: url(https://img.icons8.com/fluency/18/groups--v2.png);
-    background-color:#e0e0ef;
-    box-shadow:1px 1px 2px #6781ac ;
+ 
+    height: 28px;
+    width: 28px;
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/zDFPLc0_EM8.png);
+    background-position: 0px -1334px;
+    background-size: auto;
+    background-repeat: no-repeat;
+
  
 
 }
 
 .blank_notification #messanger_container  ul li .share::after{
-content:url(https://img.icons8.com/material-rounded/18/22C3E6/details-popup.png);
-
+ height: 28px;
+ width: 28px;
+ background-image: url(https://static.xx.fbcdn.net/rsrc.php/v4/ym/r/zDFPLc0_EM8.png);
+ background-position: 0px -2059px;
+ background-size: auto;
+ background-repeat: no-repeat;
 }
+
 
 
 
